@@ -1,0 +1,38 @@
+Admin
+    *properties
+        -name
+        -password
+        
+    *methods
+        -approve/decline requests (ws)
+        -register students
+student
+    *properties
+        -name  
+        -id
+        -department
+        -batch
+    *methods
+        -request permissions
+wards   
+    *properties
+        -username
+        -password
+    *methods
+        -get approved requests (ws)
+        -change status of permission of students after they leave
+
+superAdmin
+    *properties
+        -username
+        -password
+    *methods
+        -register admins
+        -register students
+        -approve/decline
+permission
+    *properties
+        -duration
+        -requestedBy (student)
+        -status (pending/approved/completed)
+        -approvedBy (admin/superAdmin)
